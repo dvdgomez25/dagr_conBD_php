@@ -22,3 +22,17 @@ $conectar = mysqli_connect($host, $user, $password, $database);
     }
     
     echo "</table>";
+    
+      
+    function actualizarCliente(){
+        
+down vote
+	
+
+give this button the type you want to behave it.
+
+<button type="button" onClick="location.href = 'insertDisplay.php'">Display Data</button>
+
+
+        
+    }
