@@ -21,8 +21,7 @@ $conectar = mysqli_connect($host, $user, $password, $database);
     
     while ($row = mysqli_fetch_array($datos)){
         echo "<tr>";
-        
-        echo "<td><a onClick='actualizar.php?id=".$row['idCliente']."'>".$row['idCliente']."</a></td>";
+        echo "<td><a href='index.php?actualizarCliente()'>".$row['idCliente']."</a></td>";
         echo "<td>".$row['nombre']."</td>";
         echo "<td>".$row['ciudad']."</td></tr>";
     }
