@@ -1,5 +1,10 @@
 <?php
 // conexion con la base de datos
+
+    function actualizarCliente(){
+        echo "hola";
+        }
+        
 $host = "localhost";
 $user ="root";
 $password ="";
@@ -16,7 +21,8 @@ $conectar = mysqli_connect($host, $user, $password, $database);
     
     while ($row = mysqli_fetch_array($datos)){
         echo "<tr>";
-        echo "<td><a href='ActualizarCliente'>".$row['idCliente']."</a></td>";
+        
+        echo "<td><a onClick='actualizar.php?id=".$row['idCliente']."'>".$row['idCliente']."</a></td>";
         echo "<td>".$row['nombre']."</td>";
         echo "<td>".$row['ciudad']."</td></tr>";
     }
@@ -24,15 +30,3 @@ $conectar = mysqli_connect($host, $user, $password, $database);
     echo "</table>";
     
       
-    function actualizarCliente(){
-        
-down vote
-	
-
-give this button the type you want to behave it.
-
-<button type="button" onClick="location.href = 'insertDisplay.php'">Display Data</button>
-
-
-        
-    }
